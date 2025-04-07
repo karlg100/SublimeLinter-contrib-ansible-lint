@@ -44,12 +44,12 @@ Sublime Text -> Preferences -> Package Settings -> ApplySyntax -> Settings - Use
     "syntaxes": [{
         "name": "Ansible/Ansible",
         "rules": [
-          {"file_name": ".*/tasks/.*.yml$"},
-          {"file_name": ".*/handler/.*.yml$"},
-          {"file_name": ".*/*_vars/.*.yml$"},
-          {"file_name": ".*/roles/.*.yml$"},
-          {"file_name": ".*/playbooks/.*.yml$"},
-          {"file_name": ".*/.*ansible.*/.*.yml$"}
+          {"globmatch": ".*/tasks/.*.yml$"},
+          {"globmatch": ".*/handler/.*.yml$"},
+          {"globmatch": ".*/*_vars/.*.yml$"},
+          {"globmatch": ".*/roles/.*.yml$"},
+          {"globmatch": ".*/playbooks/.*.yml$"},
+          {"globmatch": ".*/.*ansible.*/.*.yml$"}
         ]
       }]
 ```
