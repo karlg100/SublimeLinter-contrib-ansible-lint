@@ -33,7 +33,7 @@ class AnsibleLint(Linter):
 
     defaults = {
         'selector': 'source.ansible',
-        'args': '--nocolor -p',
+        'args': '--nocolor -p -x role-name',
         '--exclude= +': ['.galaxy'],
         '-c': '',
         '-r': '',
