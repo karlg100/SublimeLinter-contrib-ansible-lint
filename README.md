@@ -31,29 +31,6 @@ To install via Package Control, do the following:
 
 **Note:** If `Ansible` syntax is not installed this plugin will not work.
 
-#### Syntax configuration
-To be able to automatically open the `.yml` files in an Ansible project with the Ansible syntax, `ApplySyntax` needs to be configured with the settings below. If this is not done the `.yml` files will be opend with the YAML syntax and the linter plugin will not work without manually change the syntax for every file.
-
-The settings can be found under:
-
-```
-Sublime Text -> Preferences -> Package Settings -> ApplySyntax -> Settings - User
-```
-
-```
-    "syntaxes": [{
-        "name": "Ansible/Ansible",
-        "rules": [
-          {"globmatch": ".*/tasks/.*.yml$"},
-          {"globmatch": ".*/handler/.*.yml$"},
-          {"globmatch": ".*/*_vars/.*.yml$"},
-          {"globmatch": ".*/roles/.*.yml$"},
-          {"globmatch": ".*/playbooks/.*.yml$"},
-          {"globmatch": ".*/.*ansible.*/.*.yml$"}
-        ]
-      }]
-```
-
 ### Linter configuration
 In order for `ansible-lint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
