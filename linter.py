@@ -11,6 +11,8 @@
 """This module exports the AnsibleLint plugin class."""
 
 from SublimeLinter.lint import Linter, util
+import re
+import os
 
 
 class AnsibleLint(Linter):
